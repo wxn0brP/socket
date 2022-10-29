@@ -1,4 +1,4 @@
-var portSIO = 14881;
+var portSIO = process.env.PORT || 14881; //w glitch 3000
 const io = require('socket.io')(portSIO);
 
 const lo = console.log;
